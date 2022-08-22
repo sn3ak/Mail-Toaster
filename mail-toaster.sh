@@ -37,7 +37,7 @@ export TOASTER_ORG_NAME="$_ORGNAME"
 export TOASTER_HOSTNAME="$_HOSTNAME"
 export TOASTER_MAIL_DOMAIN="$_EMAIL_DOMAIN"
 export TOASTER_ADMIN_EMAIL="postmaster@${_EMAIL_DOMAIN}"
-export TOASTER_SRC_URL="https://raw.githubusercontent.com/msimerson/Mail-Toaster-6/master"
+export TOASTER_SRC_URL="https://raw.githubusercontent.com/sn3ak/Mail-Toaster/master"
 
 # If your hosts public facing IP(s) are not bound to a local interface, configure it here.
 # Haraka determines it at runtime (with STUN) but the DNS configuration cannot
@@ -114,7 +114,7 @@ mt6_version_check()
 	fi
 }
 
-export TOASTER_SRC_URL=${TOASTER_SRC_URL:="https://raw.githubusercontent.com/msimerson/Mail-Toaster-6/master"}
+export TOASTER_SRC_URL=${TOASTER_SRC_URL:="https://raw.githubusercontent.com/sn3ak/Mail-Toaster/master"}
 
 mt6_version_check
 # load the local config file
