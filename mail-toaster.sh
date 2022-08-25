@@ -57,11 +57,7 @@ export TOASTER_MARIADB="0"
 export TOASTER_PKG_AUDIT="0"
 export ROUNDCUBE_SQL="0"
 export ROUNDCUBE_DEFAULT_HOST=""
-export SQUIRREL_SQL="0"
-export TOASTER_NRPE=""
-export TOASTER_MUNIN=""
-export TOASTER_QMHANDLE="0"
-export TOASTER_MSA="haraka"
+export TOASTER_MSA="opensmtpd"
 export MAXMIND_LICENSE_KEY=""
 
 EO_MT_CONF
@@ -143,7 +139,7 @@ export TOASTER_MARIADB=${TOASTER_MARIADB:="0"}
 export SQUIRREL_SQL=${SQUIRREL_SQL:="$TOASTER_MYSQL"}
 export ROUNDCUBE_SQL=${ROUNDCUBE_SQL:="$TOASTER_MYSQL"}
 export TOASTER_NTP=${TOASTER_NTP:="ntp"}
-export TOASTER_MSA=${TOASTER_MSA:="haraka"}
+export TOASTER_MSA=${TOASTER_MSA:="opensmtpd"}
 
 if [ "$TOASTER_MYSQL" = "1" ]; then
 	echo "mysql enabled"
